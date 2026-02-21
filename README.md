@@ -1,9 +1,8 @@
 # COMP-3610-Assignment-1
-
-##Overview
+Overview
 This project builds an end-to-end data pipeline for the NYC Yellow Taxi Trip dataset (January 2024). It ingests, cleans, and analyzes approximately 3 million trip records, and presents findings through an interactive Streamlit dashboard.
 
-##Repository Structure
+Repository Structure
 assignment1/
 	assignment1.ipynb   # Main notebook (Parts 1, 2, 3 prototyping)
 	app.py              # Streamlit dashboard (Part 3)
@@ -15,15 +14,15 @@ assignment1/
        			yellow_tripdata_2024-01.parquet
         		taxi_zone_lookup.csv
 
-##Setup Instructions
-###1. Clone the repository
+Setup Instructions
+1. Clone the repository
 
 ```bash
 git clone <"https://github.com/FaribaB/COMP-3610-Assignment-1">
 cd <"COMP-3610-Assignment-1">
 ```
 
-###2. Create and activate a virtual environment
+2. Create and activate a virtual environment
 ```bash
 python -m venv venv
 ```
@@ -38,13 +37,13 @@ Windows:
 venv\Scripts\activate
 ```
 
-###3. Install dependencies
+3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 (you may need to use python -m pip install -r requirements.txt depending on your luck)
 
-###4. Run the Jupyter Notebook
+4. Run the Jupyter Notebook
 ```bash
 jupyter notebook assignment1.ipynb
 ```
@@ -58,7 +57,7 @@ Run all cells in order. The notebook will automatically:
 NOTE:
 The data files are not included in the repository. They will be downloaded automatically when you run the notebook or launch the app for the first time. An internet connection is required.
 
-###5. Launch the Streamlit Dashboard
+5. Launch the Streamlit Dashboard
 ```bash
 streamlit run app.py
 ```
@@ -68,7 +67,7 @@ The app will open at `http://localhost:8501`.
 
 
 
-##Data Sources
+Data Sources
 `yellow_tripdata_2024-01.parquet`
 NYC Yellow Taxi trip records, January 2024 (~3M rows) 
 [Download] (https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet)
@@ -80,8 +79,8 @@ TLC Taxi Zone lookup table
 Data provided by the [NYC Taxi and Limousine Commission (TLC)](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 
 
- ##Deployed Dashboard
+ Deployed Dashboard
  Live Dashboard: https://comp-3610-assignment-1-fariba-bhaggan.streamlit.app/
 
-##AI Tools Disclosure
+AI Tools Disclosure
 See the final cell of `assignment1.ipynb` for a full AI tools disclosure statement.
